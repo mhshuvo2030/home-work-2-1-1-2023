@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Flex-2</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<!-- <div class="container">
+		<div class="item-one">1</div>
+		<div class="item-two">2</div>
+		<div class="item-three">3</div>
+		<div class="item-four">4</div>
+		<div class="item-five">5</div>
+	</div> -->
+       <!-- <style>
+       	.content{
+       		display: flex;
+       		flex-wrap: wrap;
+       		justify-content: space-between;
+       	}
+       	.content-1{
+       		display: flex;
+       		flex-direction: column;
+       		flex-basis: 100%;
+       		flex-grow: 1;
+
+       	}
+       	.content-2{
+       		display: flex;
+       		flex-basis: 100%;
+       	}
+
+       	@media screen (min-width:800px) {
+       		.content-1{
+       			flex-direction: row;
+       			flex-wrap: wrap;
+       			flex-basis: 50%;
+       		}
+       		.content-2{
+       			flex-basis: 50%;
+       		}
+       		.one{
+       			flex-basis: 50%;
+       		}
+       		.two{
+       			flex-basis: 50%;
+       		}
+       	}
+
+
+
+
+
+       </style> -->
+
+<style>
+	.content{
+		display: grid;
+		grid-template-rows: repeat(4, 1fr);
+	}
+
+   @media screen (min-width: 770px) {
+   	.content{
+   	  grid-template-columns: repeat(3, 1fr);
+   	  grid-template-rows: 1fr 1fr;
+   	  grid-template-areas:"a b c" "d d c";
+   	}
+   	.one{
+   		grid-area: 1;
+   	}
+   	.two{
+   		grid-area: 2;
+   	}
+   	.three{
+   		grid-area: 3;
+   	}
+   	.four{
+   		grid-area: 4;
+   	}
+   }
+
+
+
+
+</style>
+
+
+<!-- 	<div class="wrap">
+		<div class="content">
+			 <div class="content-1">
+			 	<div class="one">1</div>
+			 	<div class="two">2</div>
+			 	<div class="four">4</div>
+			 </div>
+			 <div class="content-2">
+			 	<div class="three">3</div>
+			 </div>
+		</div>
+
+	</div> -->
+	<div class="wrap">
+		<div class="content">
+			 	<div class="one">NAME</div>
+			 	<div class="two">BIO DATA</div>
+			 	<div class="three">MY NAME IS MEHEDI HASAN SHUVO</div>
+			 	<div class="four">MH SHUVO</div>
+		</div>
+
+	</div>
+</body>
+</html>
